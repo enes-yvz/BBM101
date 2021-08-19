@@ -1,0 +1,23 @@
+#  Gravity Calculator
+#  26.10.2019
+#  This program calculates gravity
+
+0  read r1 #fallingTime
+1  read r2 #initialPosition
+2  read r3 #initialVelocity
+
+3  setn r4 -10
+4  setn r5 2
+
+5  mul r6 r1 r1
+6  mul r7 r4 r6
+7  div r8 r7 r5
+
+8  mul r9 r1 r3
+
+9  add r10 r9 r8
+10 add r11 r10 r2
+
+11 write r11
+
+12 halt
